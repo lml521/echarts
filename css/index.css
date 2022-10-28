@@ -1,0 +1,501 @@
+/* 清除 默认 样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 0.25rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 定义媒体查询 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42.66px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}
+html,
+body {
+ /* height: 100%; */
+  color: #fff;
+  background: url("../image/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+#app {
+  min-height: 780px;
+  /* height: 100%; */
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 1.1rem 0.25rem 0;
+  background: url("../image/logo.png") no-repeat;
+  background-size: contain;
+  display: flex;
+}
+#app .content {
+  flex: 3;
+}
+#app .content:nth-child(2) {
+  flex: 4;
+}
+.box-item {
+  position: relative;
+  margin-bottom: .4rem;
+  border: .28rem solid #ccc;
+  border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+  border-image-source: url("../image/border.png");
+  border-image-slice: 51 38 20 132;
+}
+.inner {
+  position: absolute;
+  left: -1.65rem;
+  top: -0.6375rem;
+  right: -0.475rem;
+  bottom: -0.25rem;
+  padding: 0.3rem 0.45rem;
+}
+/* 销量 模块 */
+.sale {
+  height: 1.375rem;
+}
+.sale ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale ul li h4 {
+  font-size: 0.35rem;
+}
+.sale ul li span {
+  position: absolute;
+  color: #4c9bfd;
+  font-size: 0.2rem;
+}
+
+/* 流动轮播 模块 */
+.scroll {
+  height: 6rem;
+}
+.scroll .inner {
+  padding: 0.3rem 0;
+}
+
+.headerTitle {
+  margin-bottom: 0.2rem;
+  padding: 0 0.45rem;
+}
+.headerTitle a {
+  color: #4c9bfd;
+  padding: 0 0.2rem;
+  font-size: 0.32rem;
+}
+.headerTitle a:nth-child(1) {
+  border-right: .06rem solid #0ce3e3;
+}
+
+.scroll .inner-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #68d8fe;
+  font-size: 0.175rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active {
+  color: #fff !important;
+}
+.scroll-view {
+  overflow: hidden;
+  width: 100%;
+  height: 3.8rem;
+  position: relative;
+}
+.view .row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.05;
+  font-size: 0.15rem;
+  color: #61a8ff;
+  padding: 0.15rem 0.45rem;
+}
+
+.scroll .inner .item-con .view {
+  animation: move 15s linear infinite;
+}
+.scroll .inner .item-con .view:hover {
+  animation-play-state: paused;
+}
+.scroll .inner .item-con .view .row:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #68d8fe;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* 销售地分布统计 模块 */
+.pie-box {
+  height: 4.25rem /* 260/80 */;
+}
+
+.pie-box .pie—con {
+  margin-top: .4rem;
+  height: 2.625rem /* 210/80 */;
+  display: flex;
+  width: 100%;
+}
+.pic-left {
+  flex: 1 !important;
+  width: 3.9rem;
+  height: 3rem;
+  margin-left: -0.125rem;
+}
+.pic-right {
+  width: 2.1rem;
+  padding: 0.45rem 0.3rem;
+  background: url("../image/rect.png");
+}
+.pic-right h4 {
+  font-size: 0.35rem;
+  color: #fff;
+  margin-bottom: 0.15rem;
+}
+.pic-right span {
+  font-size: 0.2rem;
+  color: #4c9bfd;
+  display: block;
+}
+
+/* 中间模块 */
+
+.center {
+  padding: 0 0.4rem;
+}
+.map {
+  margin-top: 0.12rem;
+  padding: 0.3rem 0 0 0;
+  height: 7rem;
+}
+.map .chart {
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.users {
+  margin-top: 1rem;
+  height: 4.24rem /* 181.3/80 */;
+}
+.bar—con {
+  margin-top: 0.2rem;
+  display: flex;
+  height: 3.2rem;
+}
+.bar—con .bar-left {
+  width: 7.35rem;
+  height: 3rem;
+}
+.bar—con .bar-right {
+  background: url("../image/rect.png");
+  background-size: cover;
+  display: flex;
+  width: 2.5rem;
+  height: 2.8rem;
+  min-width: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0.45rem 0.375rem;
+}
+.bar-right-item h4 {
+  font-size: .36rem;
+}
+.bar-right-item span {
+  font-size: .24rem;
+}
+
+.order{
+  height: 1.875rem;
+}
+.order-header{
+  display: flex;
+  height: .25rem;
+  line-height: 1;
+} 
+.order-header a{
+  color: #1150a0;
+  font-size: .25rem;
+  padding: 0 10px;
+  border-right: 1px solid #00f2f1;
+}
+.order-header a:first-child{
+  padding-left: 0;
+}
+
+.order-header a:last-child{
+  border-right:0;
+}
+
+.order-header a.active{
+ color: #fff;
+}
+.order-content{
+  display: flex;
+  margin-top: 0.2rem;
+}
+.order-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.order-item h4{
+  font-size: 0.35rem;
+  margin-bottom: 0.125rem;
+}
+.order-item span{
+  display: block;
+  color: #4c9bfd;
+  font-size: 0.2rem;
+}
+
+/* 折线图模块 */
+.line-box{
+  height: 2.9rem;
+}
+
+.line-header{
+  display: flex;
+  line-height: 1;
+}
+.line-header h3{
+  padding-right: 20px;
+  border-right:0.04rem solid  #00dcdd;
+}
+
+.line-header a{
+  display: inline-block;
+  color: #0bace6;
+  font-size: .24rem;
+  margin: 0 .2rem;
+  padding:0.04rem;
+  border-radius: 0.06rem;
+}
+.line-header a.active{
+  background-color: #4c9bfd;
+  color: #fff;
+}
+
+.line{
+  margin-top: 0.2rem;
+  height: 2.1rem;
+}
+
+.radar{
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+
+}
+.radar .box-item{
+
+width: 3.2rem;
+height: 3rem;
+}
+
+.top{
+  margin-top: .3rem;
+  height: 3.4rem;
+}
+
+.radar-box{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.radar-item{
+  flex: 1;
+}
+
+
+/* 一季度销售进度 */
+.gauge-box{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.gauge-box .gauge{
+  height: 1.2rem;
+}
+.gauge-box .gauge-con{
+  position: absolute;
+  top: .6rem;
+  left: .8rem;
+  font-size: .32rem;
+
+}
+
+
+.gauge-box .data{
+  display: flex;
+  flex-direction:column,
+}
+
+.gauge-box .data .item{
+  flex: 1;
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.gauge-box .data .item span{
+  margin-top: 0.06rem;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: .24rem;
+}
+
+/* 全国 热榜  */
+.top-box{
+  display: flex;
+}
+.top-box .all{
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.top-box .city{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+}
+
+.top-box .city h3{
+  display: flex;
+  justify-content: space-between;
+}
+.top-box .city h3 span:last-child{
+  font-size: .32rem;
+  color: #0bace6;
+  font-weight: 400;
+}
+
+.all ul{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 .2rem;
+  box-sizing: border-box;
+}
+.all ul li{
+  flex: 1; 
+  align-items: center;
+  line-height: 1;
+  font-size: 0.175rem;
+  color : #4c9bfd;
+  padding: 0.15rem;
+  cursor: pointer;
+  display : flex;
+  justify-content: space-around;
+}
+.all ul li i{
+  margin-right: .1rem;
+  font-size: .5rem;
+}
+
+
+/* 各省热销  */
+ .city-box{
+  flex : 1;
+  overflow: hidden;
+  display : flex;
+}
+
+
+.city-box ul{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.city-box .sup{
+  margin-top: 0.125rem;
+  line-height: 1;
+  margin-bottom: 0.175rem;
+  flex : 1;
+  display: flex;
+}
+.city-box .sup li{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.175rem;
+  color : #4c9bfd;
+  cursor: pointer;
+}
+.city-box .sup li span:nth-child(1){
+  margin-right: -10px;
+}
+
+.city-box .sup li.active{
+  color: #a3c6f2;
+  background-color: rgba(10, 67, 188, 0.2);
+}
+.city-box .sub{
+  margin-top: 0.125rem;
+  line-height: 1;
+  margin-bottom: 0.175rem;
+  flex : 1;
+  display: flex;
+
+  background-color: rgba(10, 67, 188, 0.2);
+}
+.city-box .sub li{
+  flex: 1;
+  align-items: center;
+  font-size: 0.175rem;
+  color : #4c9bfd;
+  display : flex;
+  justify-content: space-between;
+}
+
+.icon-up{
+  color: #ed3f35;
+}
+
+.icon-down{
+  color:#36be90;
+}

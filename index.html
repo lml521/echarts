@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>echarts</title>
+    <link rel="stylesheet" href="./fonts/icomoon.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="content">
+        <div class="box-item sale">
+          <!-- 销量 -->
+          <div class="inner">
+            <ul>
+              <li>
+                <h4>30万</h4>
+                <span>
+                  <i class="icon-dot"></i>
+                  当日销量
+                </span>
+              </li>
+              <li>
+                <h4>120万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #6acca3"></i>
+                  当日销量
+                </span>
+              </li>
+              <li>
+                <h4>359万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #6acca3"></i>
+                  当日销量
+                </span>
+              </li>
+              <li>
+                <h4>1,390万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #ed3f35"></i>
+                  当日销量
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 流动轮播 -->
+        <div class="box-item scroll">
+          <div class="inner">
+            <div class="headerTitle">
+              <a href="#"> 实时交易详情 </a>
+              <a href="#">实时注册详情</a>
+            </div>
+
+            <div class="item-con">
+              <div class="inner-content">
+                <span>交易时间</span>
+                <span>交易地区</span>
+                <span>交易金额</span>
+              </div>
+              <div class="scroll-view">
+                <div class="view"></div>
+              </div>
+            </div>
+
+            <div class="item-con" style="display: none">
+              <div class="inner-content">
+                <span>交易时间</span>
+                <span>交易地区</span>
+                <span>交易金额</span>
+              </div>
+              <div class="scroll-view">
+                <div class="view"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 销售地分布统计 -->
+        <div class="box-item pie-box">
+          <div class="inner">
+            <h3>销售地分布统计</h3>
+            <div class="pie—con">
+              <div class="pic-left"></div>
+              <div class="pic-right">
+                <div class="pic-right-item">
+                  <h4>32011</h4>
+                  <span
+                    ><i class="icon-dot" style="color: #ed3f35"></i
+                    >销售总量</span
+                  >
+                </div>
+                <div class="pic-right-item">
+                  <h4>12%</h4>
+                  <span
+                    ><i class="icon-dot" style="color: #ed3f35"></i
+                    >同比增长</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 中间模块 -->
+      <div class="content center">
+        <!-- 地图 -->
+        <div class="map">
+          <h3><i class="icon-cube"></i> 设备数据统计</h3>
+          <div class="chart"></div>
+        </div>
+        <div class="users box-item">
+          <div class="inner">
+            <h3>全国用户总量统计</h3>
+            <div class="bar—con">
+              <div class="bar-left"></div>
+              <div class="bar-right">
+                <div class="bar-right-item">
+                  <h4>32011</h4>
+                  <span
+                    ><i class="icon-dot" style="color: #ed3f35"></i
+                    >销售总量</span
+                  >
+                </div>
+                <div class="bar-right-item">
+                  <h4>12%</h4>
+                  <span
+                    ><i class="icon-dot" style="color: #ed3f35"></i
+                    >同比增长</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右边模块 -->
+      <div class="content">
+        <!-- 订单销售 -->
+        <div class="box-item order">
+          <div class="inner">
+            <div class="order-header">
+              <a href="javascript:;" data-type="day365">365天</a>
+              <a href="javascript:;" data-type="day90">90天</a>
+              <a href="javascript:;" data-type="day30">30天</a>
+              <a href="javascript:;" data-type="day1">24小时</a>
+            </div>
+            <div class="order-content">
+              <div class="order-item">
+                <h4></h4>
+                <span><i class="icon-dot"></i>订单量</span>
+              </div>
+              <div class="order-item">
+                <h4></h4>
+                <span><i class="icon-dot"></i>销售饿（万元）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 折线图模块 -->
+        <div class="box-item line-box">
+          <div class="inner">
+            <div class="line-header">
+              <h3>销售额统计</h3>
+              <a data-type="year" href="javascript:;">年</a>
+              <a data-type="quarter" href="javascript:;">季</a>
+              <a data-type="month" href="javascript:;">月</a>
+              <a data-type="week" href="javascript:;">周</a>
+            </div>
+            <div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="radar">
+          <div class="box-item">
+            <div class="inner radar-box">
+              <h3>渠道分布</h3>
+              <div class="radar-item"></div>
+            </div>
+          </div>
+          <div class="box-item">
+            <div class="inner ">
+              <h3>一季度销售进度</h3>
+              <div class="gauge-box">
+                <div class="gauges">
+                  <div class="gauge"></div>
+                  <span class="gauge-con">50%</span>
+                </div>
+                
+                <div class="data">
+                  <div class="item">
+                    <span>1,321</span>
+                    <span><i class="icon-dot"  style="color:#6acca3"></i>销售额(万元)</span>
+                  </div>
+                  <div class="item">
+                    <span>150%</span>
+                    <span><i class="icon-dot" style="color:red"></i>同⽐增⻓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-item top">
+          <div class="inner top-box">
+            <div class="all">
+              <h3>全国热榜</h3>
+              <ul>
+                <li><i class="icon-cup1" style="color:#d93f36"></i>华为</li>
+                <li><i class="icon-cup2" style="color:#68d8fe"></i>小米</li>
+                <li><i class="icon-cup3" style="color:#4c9bfd"></i>oppo</li>
+              </ul>
+            </div>
+            <div class="city">
+            <h3><span>各省热销</span><span>//近30日//</span></h3>
+            <div class="city-box">
+               <ul class="sup">             
+            </ul>
+            <ul class="sub">
+            </ul>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
